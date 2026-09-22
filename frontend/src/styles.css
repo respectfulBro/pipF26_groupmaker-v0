@@ -1,0 +1,149 @@
+:root {
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #1a1a2e;
+  background: #f7f7fb;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem;
+}
+
+h1 {
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  color: #555;
+  margin-top: 0;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  margin: 0.5rem 0 1.25rem;
+}
+
+.nav a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+.nav a.active {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.survey-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 520px;
+}
+
+.survey-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.survey-field select,
+.survey-field textarea {
+  font: inherit;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #d4d4e0;
+  border-radius: 8px;
+  background: white;
+}
+
+.scale,
+.multiselect {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.group-size {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.group-size select {
+  font-size: 1rem;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #d4d4e0;
+  border-radius: 8px;
+  background: white;
+}
+
+.randomize {
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+}
+
+.randomize:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.roster {
+  columns: 3;
+  list-style: none;
+  padding: 0;
+  line-height: 1.9;
+}
+
+.groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e3e3ee;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+}
+
+.card h2 {
+  font-size: 1rem;
+  margin: 0 0 0.4rem;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.7;
+}
+
+.error {
+  color: #b3261e;
+}
+
+@media (max-width: 640px) {
+  .roster {
+    columns: 2;
+  }
+}
